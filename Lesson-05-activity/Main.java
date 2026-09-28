@@ -16,7 +16,7 @@ class Main {
    int x1 = 2;
    int x2 = 3;
    double sum = x1 + x2;
-   System.out.println(sum);
+   System.out.println("Sum is " + sum);
 
 /*  
     Challenge 2:
@@ -39,7 +39,7 @@ System.out.println(gsum);
     Declare and assign values to any new variables
     NOTE: Does it look correct, check with a calculator?
 */
-double avg = gsum/3;
+double avg = gsum/3.0;
 System.out.println(avg);
 
 
@@ -49,10 +49,10 @@ System.out.println(avg);
     Declare and assign values to any new variables
 
 */
-  int a = 5;
-  int x = 3;
+  double a = 5;
+  double x = 3;
   double f1 = a/(x+1.0);
-  System.out.println(f1);
+  System.out.println("Y is equal to " + f1);
 
 /*  
     Challenge 5:
@@ -64,7 +64,7 @@ System.out.println(avg);
  int a2 = 10;
  int x3 = 3;
  double f2 = (2.0 * (x3) * (x3 + 1.0) * (-x3 / 2.0))/ a2;
- System.out.println(f2);
+ System.out.println("Y is "+ f2);
 
 
 
@@ -75,8 +75,8 @@ System.out.println(avg);
 
     Declare and assign values to any new variables
 */
- int b = 5.0;
- int h = 7.0;
+ int b = 5;
+ int h = 7;
  double f3 = (1.0 / 2.0) * (b * h);
  System.out.println(f3);
 
