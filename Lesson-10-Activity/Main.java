@@ -7,8 +7,8 @@ class Main {
 
 	void init(){
 		System.out.println("Enter your GPA:");
-		double gpaValue = Input.readDouble();
-		double answer1 = gpa(gpaValue);
+		double gpaVal = Input.readDouble();
+		double answer1 = gpa(gpaVal);
 		System.out.println(answer1);
 
 		System.out.println("What is your grade level?");
@@ -22,7 +22,17 @@ class Main {
 		else
 			System.out.println("Student is NOT Graduating");
 		
-		
+		System.out.println("Enter your weight in lbs:");
+		double weight = Input.readDouble();
+		System.out.println("Enter your height in inches:");
+		double height = Input.readDouble();
+		String answer3 = BMI(weight, height);
+		System.out.println(answer3);
+
+		System.out.println("Enter the package weight in lbs:");
+		double lbs = Input.readDouble();
+		double answer4 = shippingCost(lbs);
+		System.out.println(answer4);
 
   }
 
@@ -40,8 +50,27 @@ class Main {
 		return false;
   }
 
-  String BMI(double weight, double pounds){
-	
+  String BMI(double weight, double height){
+	double bmi = (weight * 703) / (height * height);
+	if(bmi <= 18.4)
+		return "Underweight";
+	else if(bmi >= 18.5 && bmi <= 24.9)
+		return "Normal";
+	else if(bmi >= 25.0 && bmi <= 39.9)
+    	return "Overweight";
+	else
+    	return "Obese";
+  }
+
+  double shippingCost(double lbs){
+	if(lbs <= 10)
+		return 0.00;
+	else if(lbs > 10 && lbs <= 15)
+		return 5.00
+	else if( lbs > 15 && lbs <= 25)
+		return 10.00;
+	else
+		 return 10.00 + (lbs - 25)* 0.02;
   }
 
   
