@@ -1,5 +1,6 @@
 Problem 1:
-Write a function collegeCredit that accepts a course code and if a course is college credit return true otherwise return false. If the sixth letter of the course code is "E" or "M" then is a college credit course.
+Write a function collegeCredit that accepts a course code and if a course is college credit return true 
+otherwise return false. If the sixth letter of the course code is "E" or "M" then is a college credit course.
 
 
 
